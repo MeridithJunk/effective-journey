@@ -13,6 +13,8 @@ class Money(Resource):
             return {'Money': 0.05}
         if weight == 2.268:
             return {'Money': 0.10}
+        if weight == 5.670:
+            return {'Money': 0.25}
 
 
 api.add_resource(Money, '/money')
