@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2edd0108-d680-47af-b0aa-707c36104c2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/test_money_returned.tavern.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/test_money_returned.tavern.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

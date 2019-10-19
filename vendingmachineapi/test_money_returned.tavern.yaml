@@ -26,3 +26,17 @@ stages:
       response:
         body:
           Money: 0.1
+
+---
+
+  test_name: Make sure that the endpoint returns a Quarter
+
+  stages:
+    - name: Make sure number is returned correctly
+      request:
+        url: http://localhost:5000/money
+        json:
+          weight: 5.670
+      response:
+        body:
+          Money: 0.25
