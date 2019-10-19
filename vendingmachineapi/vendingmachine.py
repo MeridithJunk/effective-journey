@@ -7,8 +7,9 @@ api = Api(app)
 
 class Money(Resource):
     def get(self):
-        print(request.json)
-        weight = request.json['weight']
+        return self.getcointamount(request.json['weight'])
+
+    def getcointamount(self, weight):
         if weight == 5.00:
             return {'Money': 0.05}
         if weight == 2.268:
@@ -18,7 +19,6 @@ class Money(Resource):
 
 
 api.add_resource(Money, '/money')
-
 
 if __name__ == '__main__':
     app.run()
