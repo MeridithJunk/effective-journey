@@ -15,3 +15,20 @@ stages:
     response:
       body:
           Money: 0.05
+
+---
+
+  test_name: Make sure that the endpoint returns a nickle
+
+  stages:
+    - name: Make sure number is returned correctly
+      request:
+        url: http://localhost:5000/money
+        json:
+          weight: 2.268
+        method: GET
+        headers:
+          content-type: application/json
+      response:
+        body:
+          Money: 0.1
