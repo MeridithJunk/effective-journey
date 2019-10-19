@@ -1,0 +1,17 @@
+# test_server.tavern.yam
+---
+
+test_name: Make sure that the endpoint returns a nickle
+
+stages:
+  - name: Make sure number is returned correctly
+    request:
+      url: http://localhost:5000/money
+      json:
+        weight: 5.00
+      method: GET
+      headers:
+        content-type: application/json
+    response:
+      body:
+          Money: 0.05
