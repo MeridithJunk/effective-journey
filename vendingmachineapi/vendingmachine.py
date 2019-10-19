@@ -9,7 +9,10 @@ class Money(Resource):
     def get(self):
         print(request.json)
         weight = request.json['weight']
-        return {'Money': 0.05}
+        if weight == 5.00:
+            return {'Money': 0.05}
+        if weight == 2.268:
+            return {'Money': 0.10}
 
 
 api.add_resource(Money, '/money')
